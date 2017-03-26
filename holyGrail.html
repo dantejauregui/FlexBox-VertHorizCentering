@@ -5,6 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flexbox Grid Layout Pattern - 3</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style media="screen">
 	html {box-sizing: border-box;}
 	*,
@@ -16,7 +18,7 @@
 	}
 	body {
 		font-family: "Source Sans Pro", Sans-Serif;
-		font-size: 1.2em;
+		font-size: 1.5em;
 		line-height: 1.375em;
 		padding: 0;
 		margin: 0;
@@ -26,11 +28,11 @@
 	/* _-_-__ Flexbox Grid Layout Pattern - 3 __-_-_ */
 	/* _-_-__ 3 Columns Flexbox Grid Layout __-_-_ */
 	/* _-_-__ Flexbox Holy Grail Grid Layout Pattern __-_-_ */
-	.row {
+	.rowFlex {
 		display: flex;
 		flex-flow: column wrap;
 	}
-	.col {
+	.colFlex {
 		flex: 1;
 		margin: .6em;
 		padding: .6em;
@@ -38,14 +40,14 @@
 		background-color: hsla(195, 70%, 46%, 1.0);
 	}
 	@media screen and (min-width:640px) {
-		.row {flex-flow: row wrap;}
-		main .col:nth-child(1) {flex: 1 1 100%;}
-		main .col:nth-child(2) {flex: 2;}
+		.rowFlex {flex-flow: row wrap;}
+		main .colFlex:nth-child(1) {flex: 1 1 100%;}
+		main .colFlex:nth-child(2) {flex: 2;}
 	}
 	@media screen and (min-width:960px){
-		main .col:nth-child(1) {flex: 1;}
+		main .colFlex:nth-child(1) {flex: 1;}
 	}
-	.wrapper {
+	.wrapperFlex {
 		display: flex;
 		flex-flow: column wrap;
 		min-height: 100vh;
@@ -55,26 +57,26 @@
 </head>
 <body>
 
-	<div class="wrapper">
+	<div class="wrapperFlex">
 
 		<header>
-			<div class="row">
-				<div class="col">header</div>
+			<div class="rowFlex">
+				<div class="colFlex">header</div>
 			</div>
 		</header>
 
 
 		<main>
-			<div class="row">
-				<div class="col">nav</div>
-				<div class="col">main Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-				<div class="col">aside</div>
+			<div class="rowFlex">
+				<div class="colFlex">nav</div>
+				<div class="colFlex">main Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				<div class="colFlex">aside</div>
 			</div>
 		</main>
 
 		<footer>
-			<div class="row">
-				<div class="col">footer</div>
+			<div class="rowFlex">
+				<div class="colFlex">footer</div>
 			</div>
 		</footer>
 
