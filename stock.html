@@ -7,6 +7,7 @@
 	<title>Flexbox Grid Layout Pattern - 3</title>
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -37,7 +38,7 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a class="contentBox hoverMenu" href="#">Stock</a></li>
+	        <li><a class="contentBox hoverMenu" href="#">Ordenes Pendientes</a></li>
 	        <li><a class="contentBox hoverMenu" href="#">Mi Tienda</a></li>
 	        <li><a class="contentBox hoverMenu" href="#">Mis Datos Personales</a></li>
 	      </ul>
@@ -52,52 +53,72 @@
 			<div class="rowFlex">
 				
 				<div class="colFlex bg3">
-					<h5>La siguiente tabla muestra las Ordenes Pendientes:</h5>
+					<h5>La siguiente tabla muestra tus Productos y su Stock pertinente:</h5>
+					<br>
+
+					<form class="form-inline centering">
+					  <div class="form-group ">
+					    
+					    <div class="input-group ">
+					      <span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span>
+					      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+					     
+					    </div>
+					  </div>
+					  <button type="submit" class="btn btn-primary dissapear">Buscar</button>
+					</form>
+
 					<br>
 					<table class="table table-hover table-responsive">
 					  <thead>
 					  	<tr class="info">
-					  		<th>Fecha:</th>
-					  		<th>Tarea:</th>
-					  		<th>Responsable:</th>
-					  		<th>Lugar:</th>
+					  		<th>Cod:</th>
+					  		<th>Nombre Producto:</th>
+					  		<th>Stock:</th>
+					  		<th>Unidades:</th>
+					  		<th></th>
 					  	</tr>
 					  </thead>
 
 					  <tbody>
 					  	<tr>
-					  		<th class="contentTable">1 Mayo</th>
-					  		<th class="contentTable">Descargar lavado</th>
-					  		<th class="contentTable">Pedro Suarez</th>
-					  		<th class="contentTable">Miraflores</th>
+					  		<th class="contentTable">2342355</th>
+					  		<th class="contentTable">Escuadra 3.5mm</th>
+					  		<th class="contentTable">23</th>
+					  		<th class="contentTable">unid.</th>
+					  		<th class="contentTable"><i class="fa fa-check text-success fa-2x" aria-hidden="true"></i></th>
 					  	</tr>
 
 					  	<tr>
-					  		<th class="contentTable">1 Mayo</th>
-					  		<th class="contentTable">Descargar lavado</th>
-					  		<th class="contentTable">Pedro Suarez</th>
-					  		<th class="contentTable">Miraflores</th>
+					  		<th class="contentTable">2464654</th>
+					  		<th class="contentTable">Plumones FaberC.</th>
+					  		<th class="contentTable">0</th>
+					  		<th class="contentTable">unid.</th>
+					  		<th class="contentTable"><i class="fa fa-times-circle text-danger fa-2x" aria-hidden="true"></i></th>
 					  	</tr>
 
 					  	<tr>
-					  		<th class="contentTable">1 Mayo</th>
-					  		<th class="contentTable">Descargar lavado</th>
-					  		<th class="contentTable">Pedro Suarez</th>
-					  		<th class="contentTable">Miraflores</th>
+					  		<th class="contentTable">8794534</th>
+					  		<th class="contentTable">Regla Curva Univ.</th>
+					  		<th class="contentTable">16</th>
+					  		<th class="contentTable">unid.</th>
+					  		<th class="contentTable"><i class="fa fa-check text-success fa-2x" aria-hidden="true"></i></th>
 					  	</tr>
 
 					  	<tr>
-					  		<th class="contentTable">1 Mayo</th>
-					  		<th class="contentTable">Descargar lavado</th>
-					  		<th class="contentTable">Pedro Suarez</th>
-					  		<th class="contentTable">Miraflores</th>
+					  		<th class="contentTable">4554723</th>
+					  		<th class="contentTable">Alcohol al por mayor</th>
+					  		<th class="contentTable">Lt.</th>
+					  		<th class="contentTable">2</th>
+					  		<th class="contentTable"><i class="fa fa-check text-success fa-2x" aria-hidden="true"></i></th>
 					  	</tr>
 
 					  	<tr>
-					  		<th class="contentTable">1 Mayo</th>
-					  		<th class="contentTable">Descargar lavado</th>
-					  		<th class="contentTable">Pedro Suarez</th>
-					  		<th class="contentTable">Miraflores</th>
+					  		<th class="contentTable">4663453</th>
+					  		<th class="contentTable">Dvds</th>
+					  		<th class="contentTable">0</th>
+					  		<th class="contentTable">unid.</th>
+					  		<th class="contentTable"><i class="fa fa-times-circle text-danger fa-2x" aria-hidden="true"></i></th>
 					  	</tr>	
 					  </tbody>
 					</table>
